@@ -4,3 +4,40 @@
     box-sizing: border-box;
 }
 
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+
+div.wrapper {
+    margin: 25vh auto;
+    max-width: 1440px;
+    background-color:hsl(244, 38%, 16%);
+}
+
+div.left-box {
+    float: left;
+    width: 50%;
+}
+
+div.image-bg {
+    float: left;
+    height: 50vh;
+    width: 50%;
+    background-color:hsl(277, 64%, 61%);
+}
+
+div.image-box {
+    height: 100%;
+    width: 100%;
+    background-image: url("images/image-header-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .65;
+}
+
