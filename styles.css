@@ -15,6 +15,7 @@ font-family: 'Lexend Deca', sans-serif; */
 
 body {
     background-color: hsl(233, 47%, 7%);
+    padding: 0 5vh;
 }
 
 div.wrapper {
@@ -25,11 +26,12 @@ div.wrapper {
 }
 
 div.left-box {
-    padding: 7% 10%;
+    padding: 3% 6%;
     float: left;
     width: 50%;
     height: 50vh;
     position: relative;
+    
 }
 
 div.image-bg {
@@ -38,6 +40,7 @@ div.image-bg {
     width: 50%;
     background-color:hsl(277, 64%, 61%);
     border-radius: 8px;
+   
 }
 
 div.image-box {
@@ -48,6 +51,7 @@ div.image-box {
     background-size: cover;
     opacity: .65;
     border-radius: 8px;
+    
 }
 
 div h1 {
@@ -72,13 +76,14 @@ div p.description {
 li {
     list-style: none;
     position: absolute;
-    bottom: 20%;
+    bottom: 10%;
+    width: 100%;
 }
 
 li ul {
     display: inline-block;
     color: hsla(0, 0%, 100%, 0.6);
-    padding-right: 60px;
+    padding-right: 7%;
 }
 
 li ul p.number {
@@ -95,4 +100,20 @@ li ul p.text {
     color: hsla(0, 0%, 100%, 0.6);
     letter-spacing: 1px;
     margin-top: 5px;
+}
+
+@media (max-width: 800px) {
+    
+    div.wrapper {
+        margin: 25vh auto;
+        max-width: 375px;
+        background-color:hsl(244, 38%, 16%);
+        border-radius: 8px;
+    }
+    
+    div.left-box {
+        padding: 0;
+        float: none;
+        height: 50vh;        
+    }
 }
